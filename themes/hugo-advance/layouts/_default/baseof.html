@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    {{ if ne .Site.Params.enable_dark_mode false }}
+    <script>
+      localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
+    </script>
+    {{ end }}
+
+    {{ partial "seo/title.html" . }}
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "images/favicon/favicon-32x32.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "images/favicon/favicon-16x16.png" | absURL }}">
+
+    {{ if .Site.Params.fonts.google_fonts }}
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="{{ .Site.Params.fonts.google_fonts }}" rel="stylesheet">
+    {{ end }}
+
+    {{ if .Site.IsServer }}
+        {{ $theme := resources.Get "scss/theme.scss" | resources.ExecuteAsTemplate "theme.scss" . | toCSS (dict "targetPath" "css/theme.css" "enableSourceMap" true) }}
+        {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+        <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}"/>
+    {{ else }}
+        {{ $theme := resources.Get "scss/theme.scss" | resources.ExecuteAsTemplate "theme.scss" . | toCSS }}
+        {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS }}
+        <link rel="stylesheet" href="{{ ($theme | minify | fingerprint).RelPermalink  }}">
+        <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink  }}">
+    {{ end }}
+
+    {{ partial "seo/meta.html" . }}
+
+    {{ block "header_css" . }}{{ end }}
+</head>
+
+<body class='page {{ block "body_classes" . }}{{ end }}'>
+
+    {{ if .Site.Menus.main }}
+        {{ partial "menu/menu-main-mobile.html" . }}
+    {{ end }}
+
+    <div id="header" class='header {{ if .Site.Params.enable_fixed_header }}header-fixed{{ end }} {{ block "header_classes" . }}{{ end }}'>
+        {{ partial "header/header.html" . }}
+    </div>
+
+    <div id="wrapper" class="wrapper">
+        {{ block "main" . }}{{ end }}
+    </div>
+
+    {{ partial "footer/footer.html" . }}
+
+    {{ if ne .Site.Params.enable_dark_mode false }}
+        {{ $darkMode := resources.Get "js/darkMode.js" }}
+        {{ $jsDarkMode := slice $darkMode | resources.Concat "js/darkModeBundle.js" }}
+        {{ if .Site.IsServer }}
+        <script type="text/javascript" src="{{ $jsDarkMode.RelPermalink }}"></script>
+        {{ else }}
+        <script type="text/javascript" src="{{ ($jsDarkMode | minify | fingerprint).RelPermalink }}"></script>
+        {{ end }}
+    {{ end }}
+
+    {{ $scripts := resources.Get "js/scripts.js" }}
+    {{ $header := resources.Get "js/header.js" }}
+    {{ $hamburger := resources.Get "js/hamburger.js" }}
+
+    {{ $js := slice $scripts $header $hamburger | resources.Concat "js/bundle.js" }}
+
+    {{ if .Site.IsServer }}
+    <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+    {{ else }}
+    <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>
+    {{ end }}
+
+    {{ block "footer_js" . }}{{ end }}
+
+    {{ partial "seo/google-analytics.html" . }}
+
+</body>
+</html>
