@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering on Craig Earley Software, LLC</title>
+    <link>https://craigearley.software/</link>
+    <description>Recent content in Software Engineering on Craig Earley Software, LLC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://craigearley.software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://craigearley.software/about/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://craigearley.software/about/</guid>
+      <description>Mission Craig Earley Software, LLC is committed to nurturing trust-based relationships and delivering tailor-made software solutions, precisely customized to drive your business towards success.&#xA;Approach and Key Principles Approach At the core of the mission is obtaining a deep understanding of your unique business requirements. This ensures that the software solutions delivered are not only functional but also finely tuned to meet your specific needs.&#xA;Key Principles Clean Code Excellence: Adherence to the principles of clean code and software craftsmanship guarantees that the solutions delivered are not just operational but also maintainable and extensible—benefitting your business in the long run.</description>
+    </item>
+    <item>
+      <title>Success</title>
+      <link>https://craigearley.software/contact/success/</link>
+      <pubDate>Thu, 22 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://craigearley.software/contact/success/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://craigearley.software/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://craigearley.software/privacy-policy/</guid>
+      <description>Privacy Policy Last updated: January 26, 2024&#xA;At craigearley.software, accessible from https://craigearley.software, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that are collected and recorded by craigearley.software and how we use it.&#xA;If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.&#xA;Log Files craigearley.software follows a standard procedure of using log files.</description>
+    </item>
+    <item>
+      <title>Terms and Conditions</title>
+      <link>https://craigearley.software/terms-and-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://craigearley.software/terms-and-conditions/</guid>
+      <description>Terms and Conditions Last updated: January 26, 2024&#xA;Please read these terms and conditions carefully before using Our Service.&#xA;Interpretation and Definitions Interpretation The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.&#xA;Definitions For the purposes of these Terms and Conditions:&#xA;Affiliate means an entity that controls, is controlled by or is under common control with a party, where &amp;quot;control&amp;quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</description>
+    </item>
+  </channel>
+</rss>
