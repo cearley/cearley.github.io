@@ -55,6 +55,9 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          # Umami analytics
+          HUGO_UMAMI_DATA_WEBSITE_ID: ${{ vars.UMAMI_DATA_WEBSITE_ID }}
+          HUGO_UMAMI_SRC: ${{ vars.UMAMI_SRC }}
         run: |
           hugo \
             --gc \
