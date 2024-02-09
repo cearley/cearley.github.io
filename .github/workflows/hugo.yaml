@@ -59,7 +59,7 @@ jobs:
           HUGO_UMAMI_DATA_WEBSITE_ID: ${{ vars.UMAMI_DATA_WEBSITE_ID }}
           HUGO_UMAMI_SRC: ${{ vars.UMAMI_SRC }}
         run: |
-          echo env && hugo \
+          env && hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
