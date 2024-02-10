@@ -31,7 +31,7 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    environment: github-pages # Necessary for vars in this env to be available in this workflow.
+    environment: github-pages # Necessary for vars in this env to be available in workflow.
     env:
       HUGO_VERSION: 0.122.0
     steps:
