@@ -7,8 +7,4 @@ menu:
     weight: 1
 ---
 
-
-Please send inquiries using the form below. You may also reach out directly to <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/craigjearley?trk=profile-badge">Craig Earley</a> on __LinkedIn__.
-
-<!-- - **Phone:** XXXX XXX XXX -->
-<!-- - **Email:** [example@example.com](mailto:example@example.com) -->
+Have a project in mind? Send me a message below, or connect on [LinkedIn](https://www.linkedin.com/in/craigjearley).

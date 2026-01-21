@@ -10,9 +10,9 @@ links:
   - url: 'https://www.linkedin.com/in/craigjearley/'
     label: LinkedIn
     icon: "fab fa-linkedin"
-#   - url: 'https://github.com/cearley'
-#     label: Github
-#     icon: "fab fa-github"
+  - url: 'https://github.com/cearley'
+    label: Github
+    icon: "fab fa-github"
 #   - url: 'mailto:test@test.com'
 #     label: Email
 #     icon: "fas fa-envelope" # this uses font awesome 5 free icons. You can find more icons here https://fontawesome.com/v5/search?o=r&m=free. Click the icon you want to use and extract the icon from the class. Ie you would see <i class="fas fa-envelope"></i> for this icon. Please note you can probably only use the solid or regular icons with the free set.

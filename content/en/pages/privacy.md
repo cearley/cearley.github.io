@@ -1,52 +1,19 @@
 ---
 title: 'Privacy Policy'
 draft: false
-date: 2021-24-01
+date: 2021-01-24
 menu:
   footer_secondary:
-# Created with the help of https://www.privacypolicygenerator.org
-# I made my own minor tweaks.
-# Grammatical corrections with the help of Grammarly.
 ---
 
-<h1>Privacy Policy</h1>
-<p>Last updated: January 26, 2024</p>
+*Last updated: January 2026*
 
-<p>At {{< param domain >}}, accessible from {{< siteurl >}}, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that are collected and recorded by {{< param domain >}} and how we use it.</p>
+This site collects minimal data:
 
-<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+- **Contact form** — If you submit the contact form, I receive your name, email, and message. I use this only to respond to your inquiry.
+- **Analytics** — This site uses [Umami](https://umami.is), a privacy-focused analytics tool. It collects anonymous usage data (pages visited, referrer, browser type) without using cookies or tracking personal information.
+- **Server logs** — Standard hosting logs are collected automatically by the hosting provider for security purposes.
 
-<h2>Log Files</h2>
+This site does not use advertising or tracking cookies.
 
-<p>{{< param domain >}} follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and is a part of hosting services' analytics. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any personally identifiable information. The purpose of the information is to analyze trends, administer the site, track users' movement on the website, and gather demographic information.</p>
-
-
-
-
-<h2>Privacy Policies</h2>
-
-<P>You may consult this list to find the Privacy Policy for each of the advertising partners of {{< param domain >}}.</p>
-
-<p>Third-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on {{< param domain >}}, which are sent directly to users' browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
-
-<p>Note that {{< param domain >}} has no access to or control over these cookies that are used by third-party advertisers.</p>
-
-<h2>Third Party Privacy Policies</h2>
-
-<p>{{< param domain >}}'s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt out of certain options. </p>
-
-<p>You can choose to disable cookies through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers' respective websites.</p>
-
-<h2>Children's Information</h2>
-
-<p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-
-<p>{{< param domain >}} does not knowingly collect any Personal Identifiable Information from children or minors under the age of 18. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
-
-<h2>Online Privacy Policy Only</h2>
-
-<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they share and/or collect in {{< param domain >}}. This policy is not applicable to any information collected offline or via channels other than this website.</p>
-
-<h2>Consent</h2>
-
-<p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
+Questions? [Contact me](/contact/).

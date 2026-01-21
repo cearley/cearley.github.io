@@ -23,7 +23,7 @@
         <link href="{{ .Site.Params.fonts.google_fonts }}" rel="stylesheet">
     {{ end }}
 
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
         {{ $theme := resources.Get "scss/theme.scss" | resources.ExecuteAsTemplate "theme.scss" . | toCSS (dict "targetPath" "css/theme.css" "enableSourceMap" true) }}
         {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
         <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
@@ -59,7 +59,7 @@
     {{ if ne .Site.Params.enable_dark_mode false }}
         {{ $darkMode := resources.Get "js/darkMode.js" }}
         {{ $jsDarkMode := slice $darkMode | resources.Concat "js/darkModeBundle.js" }}
-        {{ if .Site.IsServer }}
+        {{ if hugo.IsServer }}
         <script type="text/javascript" src="{{ $jsDarkMode.RelPermalink }}"></script>
         {{ else }}
         <script type="text/javascript" src="{{ ($jsDarkMode | minify | fingerprint).RelPermalink }}"></script>
@@ -72,7 +72,7 @@
 
     {{ $js := slice $scripts $header $hamburger | resources.Concat "js/bundle.js" }}
 
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
     <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
     {{ else }}
     <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>

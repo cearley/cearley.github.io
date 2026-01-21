@@ -22,7 +22,7 @@
             {{end}}
         {{end}}
     </ul>
-    {{ if .Site.IsMultiLingual }}
+    {{ if hugo.IsMultilingual }}
     <ul class="languages">
         {{ range $.Translations }}
             <li><a href="{{ .Permalink }}" class="">{{ .Language.LanguageName }}</a></li>

@@ -1,4 +1,4 @@
-{{ if .Site.IsMultiLingual }}
+{{ if hugo.IsMultilingual }}
     <div class="language-switcher">
         {{ range .Site.Languages }}
             {{ if eq . $.Site.Language }}

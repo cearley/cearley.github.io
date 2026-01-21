@@ -1,7 +1,7 @@
 ---
 title: 'Disclaimer'
 draft: true
-date: 2021-24-01
+date: 2021-01-24
 menu:
   footer_secondary:
 ---

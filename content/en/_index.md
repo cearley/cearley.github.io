@@ -1,7 +1,7 @@
 ---
 title: "Software Engineering"
 date: 2019-02-22
-description: "Taming Complexity" #"Taming the Complex" #"Design • Develop • Deploy"
+description: "Building what matters to you."
 header_transparent: false
 hero:
   background: "images/gen/blog/blog-5-large.webp"
@@ -17,8 +17,8 @@ intro:
   enabled: true
   align: left
   image: "images/gen/content/content-5-thumbnail.webp"
-  heading: "Helping Your Business Grow"
-  description: "Tailored solutions allowing you to run more efficiently and keep up with constantly evolving technology trends."
+  heading: "From Concept to Code"
+  description: "Full-stack development, system design, and technical consulting for projects that need to work."
   # button:
   #   text: "Buy Now"
   #   url: "https://www.zerostatic.io/theme/hugo-advance/"

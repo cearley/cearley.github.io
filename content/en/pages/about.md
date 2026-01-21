@@ -9,29 +9,28 @@ menu:
     name: "About"
   footer_secondary:
     weight: 2
-#description: ""
-#image: "images/gen/services/service-8-large.webp"
+image: "images/gen/services/service-8-large.webp"
 #thumbnail: "images/gen/blog/blog-1-thumbnail.webp"
-#image: "images/gen/blog/blog-1.webp"
 ---
 
-<h1>Mission</h1>
-<p>{{< sitetitle >}} is committed to nurturing trust-based relationships and delivering tailor-made software solutions, precisely customized to drive your business towards success.</p>
+I'm a software engineer with over 20 years of experience building web applications, backend systems, and cloud infrastructure.
 
-<h2>Approach and Key Principles</h2>
+I've worked across startups, enterprises, and consulting—which means I've seen what works and what doesn't at every scale.
 
-<h3>Approach</h3>
-<p>At the core of the mission is obtaining a deep understanding of your unique business requirements. This ensures that the software solutions delivered are not only functional but also finely tuned to meet your specific needs.</p>
+## What I do
 
-<h3>Key Principles</h3>
+- Full-stack web development
+- Backend systems and APIs
+- Cloud architecture and DevOps
 
-__Clean Code Excellence:__ Adherence to the principles of clean code and software craftsmanship guarantees that the solutions delivered are not just operational but also maintainable and extensible—benefitting your business in the long run.  
+## How I work
 
-__Technical Expertise:__ With extensive experience spanning diverse organizations, a wealth of technical expertise is brought to every project, assuring that you receive the best-in-class solutions.  
+**Clean code** — Maintainable and extensible, not just functional
 
-__Small Business Advantage:__ Being a small business allows for a personalized touch, enabling direct communication and focused attention on your projects. This ensures that your unique needs are met with utmost care and precision.  
+**Direct communication** — No layers, no handoffs. You work with me.
 
-__Commitment to Quality:__ An unwavering commitment to excellence ensures consistent contributions to the success of your software development endeavors. Your success is our success.  
+**Quality over speed** — I'd rather do it right than do it twice
 
-Discover how {{< sitetitle >}} can help you achieve your software development goals. Connect to initiate a conversation about your unique requirements.
+---
 
+If you have a project that needs solid engineering, [let's talk](/contact/).
