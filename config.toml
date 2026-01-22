@@ -1,6 +1,6 @@
 baseURL = "https://craigearley.software"
 title = "Craig Earley Software, LLC"
-theme = "hugo-advance"
+# theme = "hugo-advance"  # Now imported via Hugo Modules
 [pagination]
   pagerSize = 3
 enableGitInfo = false
@@ -109,4 +109,8 @@ defaultContentLanguageInSubdir = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[module]
+[[module.imports]]
+path = "github.com/cearley/private-content"
   
