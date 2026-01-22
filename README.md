@@ -1,5 +1,8 @@
 # Hugo Web Site - Craig Earley Software
 
+[![Deploy Hugo site](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml)
+[![CodeQL](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml)
+
 
 
 ## Build and Run (Local)
