@@ -5,3 +5,5 @@ resources/
 
 # Hugo module cache
 _vendor/
+/.idea/*
+/.vscode/settings.json
