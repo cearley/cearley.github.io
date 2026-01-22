@@ -7,3 +7,7 @@ resources/
 _vendor/
 /.idea/*
 /.vscode/settings.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
