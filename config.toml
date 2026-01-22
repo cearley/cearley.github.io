@@ -112,5 +112,23 @@ defaultContentLanguageInSubdir = false
 
 [module]
 [[module.imports]]
-path = "github.com/cearley/private-hugo-theme"
+  path = "github.com/cearley/private-hugo-theme"
+
+[[module.imports]]
+  path = "github.com/cearley/private-content"
+  [[module.imports.mounts]]
+    source = "articles/software-development"
+    target = "content/en/posts"
+  [[module.imports.mounts]]
+    source = "articles/ai-engineering"
+    target = "content/en/posts"
+  [[module.imports.mounts]]
+    source = "articles/career"
+    target = "content/en/posts"
+  [[module.imports.mounts]]
+    source = "portfolio/projects"
+    target = "content/en/portfolio/github"
+  [[module.imports.mounts]]
+    source = "portfolio/case-studies"
+    target = "content/en/work"
   
