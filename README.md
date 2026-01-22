@@ -3,6 +3,10 @@
 [![Deploy Hugo site](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml)
 [![CodeQL](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml)
 
+## Theme
+
+This site uses the [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/) theme, which is imported via [Hugo Modules](https://gohugo.io/hugo-modules/) from a private repository for license compliance.
+
 
 
 ## Build and Run (Local)
