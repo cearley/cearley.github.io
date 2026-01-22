@@ -1,26 +1,67 @@
-# Hugo Web Site - Craig Earley Software
+# Web Site - Craig Earley Software, LLC
 
 [![Deploy Hugo site](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/hugo.yaml)
 [![CodeQL](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml/badge.svg)](https://github.com/cearley/cearley.github.io/actions/workflows/codeql.yaml)
 
-## Theme
+Personal portfolio website deployed at [craigearley.software](https://craigearley.software).
 
-This site uses the [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/) theme, which is imported via [Hugo Modules](https://gohugo.io/hugo-modules/) from a private repository for license compliance.
+## Architecture
 
+- **Frontend**: Hugo static site generator with Hugo Advance theme
+- **Backend**: AWS SAM (Lambda + API Gateway)
+- **Deployment**: GitHub Pages (frontend) + AWS (backend)
 
+## Hugo Modules
 
-## Build and Run (Local)
+This site uses [Hugo Modules](https://gohugo.io/hugo-modules/) to import content from private repositories:
 
-At the project root run:
+| Module | Purpose |
+|--------|---------|
+| `private-hugo-theme` | Licensed Hugo Advance theme |
+| `private-content` | Blog posts, portfolio, case studies |
 
-```
+See `docs/PRIVATE-CONTENT.md` for full documentation.
+
+## Development
+
+### Hugo Site
+
+```bash
+# Development server
+hugo server
+
+# Build static site
 hugo
 ```
 
-Hugo's built-in local server.
+### Hugo Modules
 
-```
-hugo server
+```bash
+# Update all modules (theme + content)
+hugo mod get -u
+
+# Show module dependency graph
+hugo mod graph
 ```
 
-Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+### Backend (AWS SAM)
+
+```bash
+cd backend && sam build      # Build
+cd backend && sam deploy     # Deploy
+cd backend && sam local start-api  # Test locally
+```
+
+## Development Workflows
+
+**Updating content (from private-content):**
+1. Make changes in `github.com/cearley/private-content`
+2. Push to private-content
+3. In this repo: `hugo mod get -u`
+4. Test: `hugo server`
+5. Commit `go.mod` and `go.sum`, then push
+
+**Updating site (config, layouts, static):**
+1. Edit files directly
+2. Test: `hugo server`
+3. Commit and push
