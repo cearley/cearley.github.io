@@ -74,7 +74,10 @@ The site deploys to GitHub Pages when a **release is published**. Pushing to `ma
 
 ### Creating a Release
 
-1. Update `CHANGELOG.md` - move changes from `[Unreleased]` to new version
+1. Update `CHANGELOG.md`:
+   - Move changes from `[Unreleased]` to new version section
+   - Set the release date
+   - Update comparison links at the bottom
 2. Commit the changelog:
    ```bash
    git add CHANGELOG.md

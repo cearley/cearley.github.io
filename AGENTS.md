@@ -190,7 +190,10 @@ The Hugo Advance theme supports:
 The site deploys only when a GitHub release is published (not on push to main).
 
 **Creating a release:**
-1. Update `CHANGELOG.md` - move entries from `[Unreleased]` to new version
+1. Update `CHANGELOG.md`:
+   - Move entries from `[Unreleased]` to new version section
+   - Set the release date
+   - Update comparison links at the bottom
 2. Commit: `git commit -m "docs: prepare release v1.x.x"`
 3. Create and push tag:
    ```bash
