@@ -111,6 +111,12 @@ hugo server
 
 Changes to files in the local module directories will be reflected immediately.
 
+**AI Agent Instructions:** When `replace` directives are present in `go.mod`, make content and theme changes in the local module directories specified by those paths:
+- **Content changes** (blog posts, portfolio, case studies): Edit files in the `private-content` directory path
+- **Theme changes** (layouts, partials, assets): Edit files in the `private-hugo-theme` directory path
+
+Do not edit mounted content in this repository's `content/en/` directory when replace directives point to local modules.
+
 **Important:** Remove the replace directives before committing. They contain absolute paths specific to your machine.
 
 ### AWS SAM Backend
