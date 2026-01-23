@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-01-22
+
 ### Added
 - GitHub Actions workflow to automatically create releases from tags with changelog notes
 - Version meta tag in HTML head showing deployed version (via theme update)
@@ -30,5 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/cearley/cearley.github.io/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/cearley/cearley.github.io/releases/tag/v1.0.0
