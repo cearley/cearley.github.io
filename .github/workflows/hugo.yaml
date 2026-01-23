@@ -71,8 +71,8 @@ jobs:
           # Umami analytics
           HUGO_UMAMI_DATA_WEBSITE_ID: ${{ vars.UMAMI_DATA_WEBSITE_ID }}
           HUGO_UMAMI_SRC: ${{ vars.UMAMI_SRC }}
-          # Version meta tag
-          HUGO_PARAMS_VERSION: ${{ github.ref_name }}
+          # Version meta tag (use input ref if provided, otherwise triggering ref)
+          HUGO_PARAMS_VERSION: ${{ github.event.inputs.ref || github.ref_name }}
         run: |
           hugo \
             --gc \
