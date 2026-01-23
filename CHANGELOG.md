@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-01-23
+
 ### Changed
 - Enabled social media footer links (LinkedIn, GitHub)
 - Enabled blog and work sections on homepage (will display when content is added)
@@ -42,6 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/cearley/cearley.github.io/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/cearley/cearley.github.io/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/cearley/cearley.github.io/releases/tag/v1.0.0
