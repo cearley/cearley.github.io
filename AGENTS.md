@@ -84,12 +84,13 @@ hugo mod verify
 3. In this repo: `hugo mod get -u`
 4. Test locally: `hugo server`
 5. Commit updated `go.mod` and `go.sum`
-6. Push to deploy
+6. Create a release to deploy (see Deployment section)
 
 **Updating site (config, layouts, static files):**
 1. Edit files directly in this repo
 2. Test locally: `hugo server`
 3. Commit and push
+4. Create a release to deploy (see Deployment section)
 
 **Local development with content changes:**
 Add a replace directive to `go.mod` for local development:
@@ -180,9 +181,32 @@ The Hugo Advance theme supports:
 
 ## Deployment
 
-- **Frontend**: Deploys automatically to GitHub Pages via GitHub Actions on push to `main`
+- **Frontend**: Deploys to GitHub Pages via GitHub Actions when a release is published
 - **Backend**: Manual deployment via `sam deploy` command
 - **Domain**: craigearley.software (configured in CNAME file)
+
+### Release Workflow
+
+The site deploys only when a GitHub release is published (not on push to main).
+
+**Creating a release:**
+1. Update `CHANGELOG.md` - move entries from `[Unreleased]` to new version
+2. Commit: `git commit -m "docs: prepare release v1.x.x"`
+3. Create and push tag:
+   ```bash
+   git tag v1.x.x
+   git push origin main
+   git push origin v1.x.x
+   ```
+4. GitHub Actions automatically:
+   - Creates a release with notes extracted from CHANGELOG.md
+   - Deploys the site to GitHub Pages
+
+**Deploying a specific version:**
+1. Go to Actions → "Deploy cearley.software site to Pages"
+2. Click "Run workflow"
+3. Enter the git ref (tag like `v1.0.0`, branch, or commit SHA)
+4. Click "Run workflow"
 
 ## Content Management
 

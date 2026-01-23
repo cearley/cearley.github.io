@@ -59,9 +59,39 @@ cd backend && sam local start-api  # Test locally
 2. Push to private-content
 3. In this repo: `hugo mod get -u`
 4. Test: `hugo server`
-5. Commit `go.mod` and `go.sum`, then push
+5. Commit `go.mod` and `go.sum`
+6. Create a release to deploy (see Deployment)
 
 **Updating site (config, layouts, static):**
 1. Edit files directly
 2. Test: `hugo server`
 3. Commit and push
+4. Create a release to deploy (see Deployment)
+
+## Deployment
+
+The site deploys to GitHub Pages when a **release is published**. Pushing to `main` does not trigger deployment.
+
+### Creating a Release
+
+1. Update `CHANGELOG.md` - move changes from `[Unreleased]` to new version
+2. Commit the changelog:
+   ```bash
+   git add CHANGELOG.md
+   git commit -m "docs: prepare release v1.x.x"
+   ```
+3. Create and push the tag:
+   ```bash
+   git tag v1.x.x
+   git push origin main
+   git push origin v1.x.x
+   ```
+4. GitHub Actions automatically creates the release and deploys
+
+### Deploying a Specific Version
+
+To deploy an older release or any git ref:
+1. Go to **Actions** → **Deploy cearley.software site to Pages**
+2. Click **Run workflow**
+3. Enter the ref (e.g., `v1.0.0`, `main`, or a commit SHA)
+4. Click **Run workflow**

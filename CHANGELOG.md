@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- GitHub Actions workflow to automatically create releases from tags with changelog notes
+
+### Changed
+- GitHub Pages deployment now triggers on release publish instead of push to main
+- Added manual workflow dispatch with ref input to deploy any tag, branch, or SHA
+
 ## [1.0.0] - 2026-01-22
 
 ### Added
