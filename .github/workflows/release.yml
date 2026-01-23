@@ -24,7 +24,7 @@ jobs:
         run: |
           # Extract the section for this version from CHANGELOG.md
           VERSION="${{ steps.version.outputs.version }}"
-          awk '/^## \['"$VERSION"'\]/,/^## \[/' CHANGELOG.md | sed '1d;$d' > notes.md
+          awk '/^## \['"$VERSION"'\]/{ found=1; next } found && /^## \[/{ exit } found' CHANGELOG.md > notes.md
 
           # Add link to full changelog
           echo "" >> notes.md
