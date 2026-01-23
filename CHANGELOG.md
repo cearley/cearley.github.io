@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - GitHub Actions workflow to automatically create releases from tags with changelog notes
+- Version meta tag in HTML head showing deployed version (via theme update)
 
 ### Changed
 - GitHub Pages deployment now triggers on release publish instead of push to main
