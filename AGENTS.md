@@ -93,11 +93,25 @@ hugo mod verify
 4. Create a release to deploy (see Deployment section)
 
 **Local development with content changes:**
-Add a replace directive to `go.mod` for local development:
+
+To develop with local copies of the private modules, add replace directives to `go.mod`:
+
+```go
+replace (
+	github.com/cearley/private-content => /path/to/local/private-content
+	github.com/cearley/private-hugo-theme => /path/to/local/private-hugo-theme
+)
 ```
-replace github.com/cearley/private-content => /path/to/local/private-content
+
+Then verify and start the development server:
+```bash
+hugo mod verify
+hugo server
 ```
-Remove before committing.
+
+Changes to files in the local module directories will be reflected immediately.
+
+**Important:** Remove the replace directives before committing. They contain absolute paths specific to your machine.
 
 ### AWS SAM Backend
 ```bash

@@ -68,6 +68,28 @@ cd backend && sam local start-api  # Test locally
 3. Commit and push
 4. Create a release to deploy (see Deployment)
 
+## Local Development
+
+To develop with local copies of the private modules (for instant feedback when editing content or theme):
+
+1. Add replace directives to `go.mod`:
+   ```go
+   replace (
+   	github.com/cearley/private-content => /path/to/local/private-content
+   	github.com/cearley/private-hugo-theme => /path/to/local/private-hugo-theme
+   )
+   ```
+
+2. Verify and start the server:
+   ```bash
+   hugo mod verify
+   hugo server
+   ```
+
+3. Edit files in the local module directories - changes appear immediately.
+
+4. **Before committing:** Remove the replace directives (they contain machine-specific paths).
+
 ## Deployment
 
 The site deploys to GitHub Pages when a **release is published**. Pushing to `main` does not trigger deployment.
