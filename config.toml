@@ -69,7 +69,7 @@ defaultContentLanguageInSubdir = false
 [params.footer]
   show_site_title = true
   show_copyright = true
-  show_social_media_links = false
+  show_social_media_links = true
   show_languages = false
   enable_menu_footer_primary = false
   footer_primary_menu_title = "Product"

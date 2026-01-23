@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Enabled social media footer links (LinkedIn, GitHub)
+- Enabled blog and work sections on homepage (will display when content is added)
+- Cleaned up homepage outro section (removed theme placeholder content)
+
+### Removed
+- Removed placeholder partner logos from `data/partners.json`
+- Deleted unused `static/404.md` (Jekyll leftover; theme provides proper 404 page)
+- Removed committed `.DS_Store` file from static directory
+
 ## [1.0.1] - 2026-01-22
 
 ### Added

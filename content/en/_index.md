@@ -26,22 +26,14 @@ intro:
   partners:
     enabled: false
 work:
-  enabled: false
-  label: "Our Portfolio"
-  show_view_all: false
+  enabled: true
+  label: "Recent Work"
+  show_view_all: true
   limit: 2
 outro:
   enabled: false
-  align: center
-  image: ""
-  heading: Get Started Today
-  description: Save time and money using this premium Hugo theme.
-  button:
-    text: "Buy Now"
-    url: "https://www.zerostatic.io/theme/hugo-advance/"
-    external: true
 blog:
-  enabled: false
-  show_view_all: false
+  enabled: true
+  show_view_all: true
   limit: 3
 ---
