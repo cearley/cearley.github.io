@@ -57,7 +57,11 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Configure Git for private modules
-        run: git config --global url."https://${{ secrets.PRIVATE_REPO_PAT }}@github.com/".insteadOf "https://github.com/"
+        run: |
+          # Use git credential helper to avoid exposing token in config
+          git config --global credential.helper store
+          echo "https://git:${{ secrets.PRIVATE_REPO_PAT }}@github.com" > ~/.git-credentials
+          chmod 600 ~/.git-credentials
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
