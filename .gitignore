@@ -11,3 +11,9 @@ _vendor/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Local development go.mod with replace directives (machine-specific paths)
+go.mod.dev
+
+# AI session history (ephemeral tooling output)
+.specstory/
