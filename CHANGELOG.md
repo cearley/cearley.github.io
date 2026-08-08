@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-08-08
+
 ### Added
 - Open Graph share image and favicon regenerated to match the site's current brand palette
 - New brand photography for the homepage hero, "From Concept to Code" thumbnail, and About page banner, replacing the theme's generic stock photos
@@ -69,7 +71,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/cearley/cearley.github.io/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/cearley/cearley.github.io/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/cearley/cearley.github.io/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/cearley/cearley.github.io/compare/v1.0.0...v1.0.1
