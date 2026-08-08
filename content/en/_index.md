@@ -2,6 +2,7 @@
 title: "Software Engineering"
 date: 2019-02-22
 description: "Building what matters to you."
+image: "images/social/og-image.png"
 header_transparent: false
 hero:
   background: "images/gen/blog/blog-5-large.webp"

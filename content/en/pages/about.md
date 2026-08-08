@@ -10,6 +10,8 @@ menu:
   footer_secondary:
     weight: 2
 image: "images/gen/services/service-8-large.webp"
+meta:
+  og_image: "images/social/og-image.png"
 #thumbnail: "images/gen/blog/blog-1-thumbnail.webp"
 ---
 
