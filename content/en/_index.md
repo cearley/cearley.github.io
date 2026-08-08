@@ -5,8 +5,8 @@ description: "Building what matters to you."
 image: "images/social/og-image.png"
 header_transparent: false
 hero:
-  background: "images/gen/blog/blog-5-large.webp"
-  blend_mode: "overlay"
+  background: "images/brand/hero-photo.webp"
+  blend_mode: "normal"
   theme: "primary"
 contact:
   enabled: true
