@@ -1,11 +1,11 @@
 ---
-title: "A Senior Engineer, When You Need One."
+title: "Senior Engineering. One Engagement at a Time."
 date: 2019-02-22
-description: "Senior contract software engineering — 20+ years across startups, enterprises, and consulting. One dedicated engagement at a time, so you get full focus, not a shared bench of contractors."
+description: "30+ years across startups, enterprises, and consulting."
 image: "images/social/og-image.png"
 meta:
   title: "Senior Contract Software Engineer | Craig Earley Software, LLC"
-  description: "Senior contract software engineering — one dedicated engagement at a time, with 20+ years across startups, enterprises, and consulting."
+  description: "Senior contract software engineering — one dedicated engagement at a time, with 30+ years across startups, enterprises, and consulting."
 header_transparent: false
 hero:
   background: "images/brand/hero-photo.webp"
@@ -22,7 +22,7 @@ intro:
   align: left
   image: "images/gen/content/content-5-thumbnail.webp"
   heading: "From Concept to Code"
-  description: "Full-stack development, system design, and technical consulting for projects that need to work."
+  description: "Full-stack development, system design, and technical consulting — one dedicated engagement at a time, so you get full focus, not a shared bench of contractors."
   # button:
   #   text: "Buy Now"
   #   url: "https://www.zerostatic.io/theme/hugo-advance/"

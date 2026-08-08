@@ -15,7 +15,7 @@ meta:
 #thumbnail: "images/gen/blog/blog-1-thumbnail.webp"
 ---
 
-I'm a software engineer with over 20 years of experience building web applications, backend systems, and cloud infrastructure.
+I'm a software engineer with over 30 years of experience building web applications, backend systems, and cloud infrastructure.
 
 I've worked across startups, enterprises, and consulting—which means I've seen what works and what doesn't at every scale.
 
