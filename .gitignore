@@ -20,3 +20,6 @@ go.mod.dev
 
 # Brainstorming visual companion session files (ephemeral)
 .superpowers/
+
+# Playwright MCP screenshot output (ephemeral)
+.playwright-mcp/
