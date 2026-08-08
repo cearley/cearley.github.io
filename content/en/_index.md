@@ -20,7 +20,7 @@ services:
 intro:
   enabled: true
   align: left
-  image: "images/gen/content/content-5-thumbnail.webp"
+  image: "images/brand/intro-photo.webp"
   heading: "From Concept to Code"
   description: "Full-stack development, system design, and technical consulting — one dedicated engagement at a time, so you get full focus, not a shared bench of contractors."
   # button:
