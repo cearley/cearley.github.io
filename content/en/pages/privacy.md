@@ -6,7 +6,7 @@ menu:
   footer_secondary:
 ---
 
-*Last updated: January 2026*
+*Last updated: August 2026*
 
 This site collects minimal data:
 

@@ -6,7 +6,7 @@ menu:
   footer_secondary:
 ---
 
-*Last updated: January 2026*
+*Last updated: August 2026*
 
 This is a professional website and portfolio for Craig Earley Software, LLC.
 
