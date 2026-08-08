@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Open Graph share image and favicon regenerated to match the site's current brand palette
+- New brand photography for the homepage hero, "From Concept to Code" thumbnail, and About page banner, replacing the theme's generic stock photos
+- Sourced photo library (`static/images/brand/sourced/`) with license credits, for future site imagery
+
+### Changed
+- Homepage color palette retuned to a muted steel-indigo family to match the new hero photo
+- Homepage and About page copy rewritten to reflect actual positioning and engagement model, replacing generic theme placeholder text
+- About, Privacy Policy, Terms of Use, and Contact pages rewritten in a consistent company voice (previously a mix of first-person and company voice)
+
+### Fixed
+- Homepage hero headline corrected to avoid implying on-demand/always-available staffing; years of experience corrected from 20+ to 30+
+- `terms.md` content-ownership clause corrected — site photography is licensed Unsplash stock, not original work
+- Excessive whitespace and oversized/black page-title styling on About, Privacy Policy, and Terms of Use headers
+- Backend: bumped transitive `serialize-javascript` dependency (via `mocha`) to 7.1.0, resolving one high and one moderate severity advisory
+
 ## [1.0.3] - 2026-08-07
 
 ### Removed
