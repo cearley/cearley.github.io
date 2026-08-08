@@ -1,6 +1,6 @@
 ---
 name: hero-images
-description: Use when sourcing, treating, or troubleshooting a stock photo or gradient background for a Hugo hero section or Open Graph share image on this site — text-over-photo legibility, ImageMagick gradient direction bugs, this theme's front matter image params, or hugo server crashing after an asset change.
+description: Use when sourcing, treating, or troubleshooting a stock photo or gradient background for a Hugo hero section, Open Graph share image, or favicon on this site — text-over-photo legibility, ImageMagick gradient direction bugs, generating text-overlay OG images or monogram favicons, this theme's front matter image params, or hugo server crashing after an asset change.
 ---
 
 # Hero Images
@@ -104,6 +104,57 @@ meta:
   og_image: "images/social/my-share-image.png"
 ```
 
+## Generating an OG image with text overlay
+
+Not every OG image is just a treated photo — for a text-forward share card
+(company name, tagline, domain), render it as HTML and screenshot it rather
+than compositing text with ImageMagick:
+
+1. Crop/prepare the background photo first (same aspect-ratio rules as
+   above — e.g. 1200x630 for OG), base64-encode it, and embed it as a
+   `background-image: url('data:image/png;base64,...')` in a plain HTML
+   file sized exactly to the target pixels (`width: 1200px; height: 630px`
+   on `html, body`).
+2. `@import` the site's actual Google Fonts URL (from `config.toml`
+   `params.fonts.google_fonts`) so the rendered text uses the real
+   typeface, not a system-font fallback.
+3. Serve the file over HTTP, not `file://` — see the Playwright gotcha
+   below — then navigate Playwright to it, resize the browser to the exact
+   target dimensions, and screenshot.
+4. Iterate on font-size/line-wrap the same way as hero-copy tuning: measure
+   with `browser_evaluate` (does the headline wrap where you want it?)
+   before treating a size as final.
+5. Copy the resulting screenshot straight into the static asset path — it's
+   already the exact target dimensions, no further resizing needed.
+
+**Playwright MCP blocks `file://` URLs.** Trying to `browser_navigate` to a
+local HTML file fails outright ("Access to file: protocol is blocked").
+Serve the directory instead and navigate to `http://localhost:PORT/...`:
+
+```bash
+cd /path/to/scratch/dir && python3 -m http.server 8765 > /tmp/http-server.log 2>&1 & disown
+```
+
+## Generating a simple text-on-solid-color asset (e.g. favicon)
+
+For a monogram/icon that's just bold text on a flat brand color, ImageMagick
+alone is faster than the HTML+Playwright route — but named font aliases
+like `-font "Helvetica-Bold"` fail with `unable to read font`. Pass the
+actual font file path instead:
+
+```bash
+magick -size 256x256 xc:"#3b4a8f" \
+  -gravity center -fill white -font "/System/Library/Fonts/Supplemental/Arial Bold.ttf" \
+  -pointsize 105 -annotate +0+4 "CE" \
+  favicon-master.png
+```
+
+Render once at high resolution (e.g. 256x256) and downsize from that master
+for each target size (16x16, 32x32, 48x48 for `.ico`) rather than
+re-rendering text at each size — keeps the weight/proportions consistent
+and avoids hinting artifacts at the smallest sizes looking different from
+the larger ones.
+
 ## Verify with a real screenshot, not a file preview
 
 A standalone `Read` of the image file does not reflect `background-size:
@@ -142,3 +193,5 @@ git archaeology mid-session.
 | Relying on CSS `overlay` blend for text legibility over a photo | Bake a solid+gradient scrim into the image itself |
 | Making the fade "more gradual" by starting it earlier | Keep the solid zone fixed to the text bounds; lengthen the tail instead |
 | Debugging a `hugo server` panic tied to an unrelated page | Just restart the server |
+| Navigating Playwright to a local file with `file://` | Serve it with `python3 -m http.server` and use `http://localhost:PORT/...` |
+| Using a named font alias (`-font "Helvetica-Bold"`) in ImageMagick | Pass the actual font file path instead |

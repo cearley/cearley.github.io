@@ -88,6 +88,18 @@ Do not edit mounted content in this repository's `content/en/` directory when re
 - `portfolio/github/` - GitHub projects (from `portfolio/projects`)
 - `work/` - Case studies (from `portfolio/case-studies`)
 
+## Theme Customization
+
+The theme (`private-hugo-theme`) is a separate module — don't fork it for
+site-specific tweaks. Instead, override individual theme templates by
+creating a matching file under this repo's own `layouts/` directory (e.g.
+`layouts/index.html`, `layouts/_default/single.html`); Hugo's module
+lookup order gives the site repo's `layouts/` precedence over the theme
+module's. Copy the theme's original file as a starting point, then fill in
+its `header_css` block with a `<style>` override scoped to that page's
+`body_classes` value — don't edit the theme module's SCSS for something
+that only applies to one page or page-kind.
+
 ## Deployment
 
 - **Frontend**: Deploys to GitHub Pages via GitHub Actions when a release is published
