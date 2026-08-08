@@ -1,0 +1,75 @@
+{{/*
+  Site-level override of the hugo-advance theme's layouts/_default/single.html.
+  Used by About, Privacy Policy, and Terms of Use (any generic page without a
+  hero). Only addition vs. the theme original: the header_css block below,
+  which (1) shrinks the page h1 down from the theme's hero-sized 3/4rem
+  default and recolors it to the brand primary instead of near-black body
+  text, and (2) tightens the gap between the heading/image block and the
+  page content, which stacks two full .strip paddings (160px at desktop)
+  by default. Keep this file in sync with the theme's single.html if the
+  theme is updated.
+*/}}
+{{ define "header_css" }}
+<style>
+  .page-default-single h1 {
+    font-size: 2.25rem;
+    color: var(--color-primary);
+  }
+  .page-default-single #wrapper > .strip:nth-of-type(1) {
+    padding-bottom: 20px;
+  }
+  .page-default-single #wrapper > .strip:nth-of-type(2) {
+    padding-top: 20px;
+  }
+  @media (min-width: 768px) {
+    .page-default-single h1 {
+      font-size: 2.75rem;
+    }
+    .page-default-single #wrapper > .strip:nth-of-type(1) {
+      padding-bottom: 30px;
+    }
+    .page-default-single #wrapper > .strip:nth-of-type(2) {
+      padding-top: 30px;
+    }
+  }
+</style>
+{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+{{ define "header_classes" }}{{ if .Params.header_transparent }}header-transparent{{ end }}{{ end }}
+
+{{ define "main" }}
+
+    {{ if .Params.hero }}
+        {{ partial "components/hero.html" (dict "title" .Title "description" .Params.description "background" .Params.hero.background "blend_mode" .Params.hero.blend_mode "theme" .Params.hero.theme)}}
+    {{ else }}
+        <div class="strip theme-base">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1>{{ .Title }}</h1>
+                        <h2>{{ .Params.description }}</h2>
+                    </div>
+                    {{ if .Params.image }}
+                        <div class="col-12 col-lg-12" style="max-height: 400px; overflow: hidden;">
+                            <img class="img-fluid" src={{ .Params.image | relURL }} />
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+
+    <div class="strip">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-12 col-md-8 col-lg-7">
+                    <div class="content">{{ .Content }}</div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 offset-lg-1">
+                    {{ partial "components/sidebar.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{ end }}
