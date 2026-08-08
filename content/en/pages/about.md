@@ -9,30 +9,32 @@ menu:
     name: "About"
   footer_secondary:
     weight: 2
-image: "images/gen/services/service-8-large.webp"
+image: "images/brand/about-photo.webp"
 meta:
   og_image: "images/social/og-image.png"
 #thumbnail: "images/gen/blog/blog-1-thumbnail.webp"
 ---
 
-I'm a software engineer with over 30 years of experience building web applications, backend systems, and cloud infrastructure.
+Craig Earley Software, LLC brings 30+ years of experience building web applications, backend systems, and cloud infrastructure.
 
-I've worked across startups, enterprises, and consulting—which means I've seen what works and what doesn't at every scale.
+That experience spans startups, enterprises, and consulting — hard-won knowledge of what works, and what doesn't, at every scale.
 
-## What I do
+## Capabilities
 
 - Full-stack web development
 - Backend systems and APIs
 - Cloud architecture and DevOps
 
-## How I work
+## How Engagements Work
 
-**Clean code** — Maintainable and extensible, not just functional
+**Embedded, not outsourced** — Works inside your team, your tools, and your process, not at arm's length.
 
-**Direct communication** — No layers, no handoffs. You work with me.
+**Clean code** — Maintainable and extensible, not just functional.
 
-**Quality over speed** — I'd rather do it right than do it twice
+**Direct communication** — No layers, no handoffs, no account manager relaying messages.
+
+**Quality over speed** — Built right the first time, not revisited later.
 
 ---
 
-If you have a project that needs solid engineering, [let's talk](/contact/).
+If you have a project that needs solid engineering, [get in touch](/contact/).
