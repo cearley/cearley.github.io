@@ -10,10 +10,10 @@ menu:
 
 This site collects minimal data:
 
-- **Contact form** — If you submit the contact form, I receive your name, email, and message. I use this only to respond to your inquiry.
+- **Contact form** — Submitting the contact form shares a name, email, and message, used only to respond to the inquiry.
 - **Analytics** — This site uses [Umami](https://umami.is), a privacy-focused analytics tool. It collects anonymous usage data (pages visited, referrer, browser type) without using cookies or tracking personal information.
 - **Server logs** — Standard hosting logs are collected automatically by the hosting provider for security purposes.
 
 This site does not use advertising or tracking cookies.
 
-Questions? [Contact me](/contact/).
+Questions? [Get in touch](/contact/).
