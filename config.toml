@@ -30,8 +30,8 @@ defaultContentLanguageInSubdir = false
       alt_offset = "#CCCCCC"
       alt_text = "#202020"
       alt_text_offset = "#625c5c"
-      primary = "#2b3af7"
-      primary_offset = "#702bf7"
+      primary = "#3b4a8f"
+      primary_offset = "#5a4a9f"
       primary_text = "#ffffff"
       primary_text_offset = "#79bcff"
     [params.colors.dark]
@@ -43,8 +43,8 @@ defaultContentLanguageInSubdir = false
       alt_offset = "#2f2f2f"
       alt_text = "#fafafa"
       alt_text_offset = "#a8a4a4"
-      primary = "#2b5df7"
-      primary_offset = "#a62bf7"
+      primary = "#5568c9"
+      primary_offset = "#7a5fc9"
       primary_text = "#eeebfc"
       primary_text_offset = "#a7a7a7"
 

@@ -17,3 +17,6 @@ go.mod.dev
 
 # AI session history (ephemeral tooling output)
 .specstory/
+
+# Brainstorming visual companion session files (ephemeral)
+.superpowers/
