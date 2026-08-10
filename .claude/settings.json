@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "if": "Bash(git commit:*)",
+            "command": "grep -q '^replace' go.mod 2>/dev/null && echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"deny\",\"permissionDecisionReason\":\"go.mod has a local replace directive (from go.mod.dev) pointing at machine-specific paths \\u2014 remove it before committing. See AGENTS.md \\u0027Local development with content changes\\u0027.\"}}' || echo '{}'",
+            "statusMessage": "Checking go.mod for local replace directives..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | { read -r f; case \"$f\" in *\"/layouts/\"*|*\"/content/\"*) hugo --quiet --destination /tmp/hugo-hook-check 2>&1 | head -40 ;; esac; } || true",
+            "statusMessage": "Sanity-building Hugo site..."
+          }
+        ]
+      }
+    ]
+  }
+}
