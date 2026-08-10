@@ -1,5 +1,5 @@
 ---
-title: "Senior Engineering. One Engagement at a Time."
+title: "Software Engineering. One Engagement at a Time."
 date: 2019-02-22
 description: "30+ years across startups, enterprises, and consulting."
 image: "images/social/og-image.png"
@@ -22,7 +22,7 @@ intro:
   align: left
   image: "images/brand/intro-photo.webp"
   heading: "From Concept to Code"
-  description: "Full-stack development, system design, and technical consulting — one dedicated engagement at a time, so you get full focus, not a shared bench of contractors."
+  description: "Senior-level full-stack development, system design, and technical consulting — one dedicated engagement at a time, so you get full focus, not a shared bench of contractors."
   # button:
   #   text: "Buy Now"
   #   url: "https://www.zerostatic.io/theme/hugo-advance/"
