@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-08-09
+
+### Changed
+- Homepage hero headline refined from "Senior Engineering" to "Software Engineering. One Engagement at a Time." for clarity — the previous phrase read ambiguously and isn't a standalone construction in common usage
+- Seniority positioning ("30+ years") moved into the "From Concept to Code" intro section instead of the headline
+- Hero H1 font-size retuned so the new headline still wraps to 2 lines
+
 ## [1.0.4] - 2026-08-08
 
 ### Added
@@ -71,7 +78,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.4...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.5...HEAD
+[1.0.5]: https://github.com/cearley/cearley.github.io/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/cearley/cearley.github.io/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/cearley/cearley.github.io/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/cearley/cearley.github.io/compare/v1.0.1...v1.0.2
