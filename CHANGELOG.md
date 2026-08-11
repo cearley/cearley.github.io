@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-08-11
+
+### Changed
+- Homepage hero headline reworked from "Software Engineering. One Engagement at a Time." to "Full-Stack Development. System Design. Technical Consulting." — leads with capability instead of the "one engagement at a time" framing, which read as a structural fact of working solo dressed up as a differentiator
+- "30+ years" corrected to "25+ years" across the homepage, About page, meta description, `og-image.png`, and the LinkedIn cover — actual career start (1998) doesn't yet support "30+"
+- "Senior" reintroduced in the meta title/description, homepage intro copy, and About page — always paired with a concrete claim (years, capability) rather than standing alone as a bare credential
+- Replaced the "CE" monogram (regulatory CE-marking collision risk) with a plain "C" initial in the favicon and LinkedIn profile image, committing to wordmark-only branding for now
+
+### Added
+- LinkedIn-sized brand assets (`static/images/logo/linkedin/`): profile image and cover banner matching the site's current copy and photo treatment
+
+### Fixed
+- `og-image.png`'s photo-to-navy gradient transition, which had gone abrupt instead of gradual due to a missing `-flop` step in the mask generation
+- Homepage hero headline now breaks cleanly per clause instead of wrapping arbitrarily at arbitrary widths (site-level override of the theme's hero partial)
+
+### Removed
+- Outdated `static/images/logo/linkedin-logo.png` (superseded by the new `static/images/logo/linkedin/` assets)
+
 ## [1.0.5] - 2026-08-09
 
 ### Changed
@@ -78,7 +96,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.5...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.6...HEAD
+[1.0.6]: https://github.com/cearley/cearley.github.io/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/cearley/cearley.github.io/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/cearley/cearley.github.io/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/cearley/cearley.github.io/compare/v1.0.2...v1.0.3
