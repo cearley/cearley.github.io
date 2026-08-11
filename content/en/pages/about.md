@@ -15,7 +15,7 @@ meta:
 #thumbnail: "images/gen/blog/blog-1-thumbnail.webp"
 ---
 
-Craig Earley Software, LLC brings 30+ years of experience building web applications, backend systems, and cloud infrastructure.
+Craig Earley Software, LLC brings 25+ years of senior-level experience building web applications, backend systems, and cloud infrastructure.
 
 That experience spans startups, enterprises, and consulting — hard-won knowledge of what works, and what doesn't, at every scale.
 

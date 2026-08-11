@@ -1,11 +1,12 @@
 ---
-title: "Software Engineering. One Engagement at a Time."
+title: "Full-Stack Development.<br>System Design.<br>Technical Consulting."
 date: 2019-02-22
-description: "30+ years across startups, enterprises, and consulting."
+description: "25+ years across startups, enterprises, and consulting."
 image: "images/social/og-image.png"
 meta:
   title: "Senior Contract Software Engineer | Craig Earley Software, LLC"
-  description: "Senior contract software engineering — one dedicated engagement at a time, with 30+ years across startups, enterprises, and consulting."
+  description: "Senior contract software engineering — one dedicated engagement at a time, with 25+ years across startups, enterprises, and consulting."
+  og_title: "Full-Stack Development. System Design. Technical Consulting."
 header_transparent: false
 hero:
   background: "images/brand/hero-photo.webp"
