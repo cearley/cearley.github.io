@@ -32,7 +32,7 @@ jobs:
           echo "Full changelog: https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md" >> notes.md
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           body_path: notes.md
           draft: false
