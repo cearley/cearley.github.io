@@ -8,4 +8,6 @@ menu:
     weight: 1
 ---
 
-Have a project in mind? Send a message below, or connect on [LinkedIn](https://www.linkedin.com/in/craigjearley).
+## Ready to talk about your project?
+
+Get in touch to discuss scope, timeline, and current availability — including short-term consulting and small projects. Send a message below, or connect on [LinkedIn](https://www.linkedin.com/in/craigjearley).
