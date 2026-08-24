@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-08-24
+
+### Changed
+- Dropped "senior"/"senior-level" language from the homepage and About page copy
+- Moved the "Ready to talk about your project?" CTA from the homepage `outro` block to the Contact page
+
+### Fixed
+- LinkedIn cover asset rebuilt at LinkedIn's documented 4200x700 spec (previous 2256x382 asset was badly letterboxed by LinkedIn's crop tool)
+
 ## [1.0.6] - 2026-08-11
 
 ### Changed
@@ -96,7 +105,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Theme now imported via Hugo Modules (previously vendored in `themes/`)
 - Content structure supports mounting from private repositories
 
-[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.6...HEAD
+[Unreleased]: https://github.com/cearley/cearley.github.io/compare/v1.0.7...HEAD
+[1.0.7]: https://github.com/cearley/cearley.github.io/compare/v1.0.6...v1.0.7
 [1.0.6]: https://github.com/cearley/cearley.github.io/compare/v1.0.5...v1.0.6
 [1.0.5]: https://github.com/cearley/cearley.github.io/compare/v1.0.4...v1.0.5
 [1.0.4]: https://github.com/cearley/cearley.github.io/compare/v1.0.3...v1.0.4
